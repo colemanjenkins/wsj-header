@@ -184,7 +184,7 @@ const sections = {
             "Real Estate Video"
         ]
     },
-    "WSJ.Magazine": {
+    "WSJ. Magazine": {
         "Sections": [
             "Fashion",
             "Art & Design",

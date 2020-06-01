@@ -2,14 +2,49 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     text-transform: uppercase;
+    display: block;
+    height: 65px;
+    width: 570px;
+    margin: 0 auto 10px;
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-image: url(https://vir.wsj.net/fp/assets/webpack4/img/wsj-logo-big-black.360b936a.svg);
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: center 16.5px;
+    text-indent: -9999px;
+    padding: 0;
 }
 
-.wsj {
-    display: none;
+
+.link:hover {
+    color: #0274b6;
+    cursor: pointer;
+}   
+
+.link:link {
+    color: black;
+}
+
+.latest-headlines {
+    color: #0274b6;
+    font-size: 12px;
 }
 
 .full-size-options {
     /* display: inline-block; */
+}
+
+.subtitle-option {
+    padding-right: 9px;
+    border: 0;
+    border-right: 1px;
+    margin-right: 10px;
+    border-color: gray;
+    border-style: solid;
+    font-size: 12px;
 }
 
 .side-list {
@@ -22,8 +57,18 @@ ul {
 }
 
 .section-full {
+    color: black;
+}
+
+.section-full:link {
     display: inline-block;
     margin: 4px;
+    color: black;
+    text-decoration: none;
+}
+
+.section-full:hover {
+    color: #0274b6;
 }
 
 .nav-bar {
@@ -36,6 +81,8 @@ ul {
 
 .full-size-item {
     display: inline-block;
+    margin: 5px;
+    margin-top: 0;
     /* float: left; */
 }
 
@@ -49,14 +96,19 @@ ul {
     .full-size-options {
         display: none;
     }
+    h1 {
+        background-size: 275px;
+    }
+    .subtitle-options {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 620px) {
-    .full-title {
-        display: none;
-    }
-    .wsj {
-        display: block;
+    h1 {
+        background-image: url(https://vir.wsj.net/fp/assets/webpack4/img/wsj-logo-alt.ad4677f0.svg);
+        background-size: 40px 22px;
+        width: 40px;
     }
 }
 

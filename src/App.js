@@ -6,7 +6,7 @@ import Header from './Header';
 function App() {
   let arr = []
   for (let i = 0; i < 100; i++) {
-    arr.push("Random");
+    arr.push("Random " + i);
   }
   return (
     <div className="App">
