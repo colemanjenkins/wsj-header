@@ -11,9 +11,9 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            hover: false,
-            hoverElem: null,
-            hoverTitle: ""
+            hover: true,
+            hoverElem: sections["Life & Arts"],
+            hoverTitle: "Life & Arts"
         }
     }
 
@@ -56,7 +56,7 @@ class Header extends Component {
                             let coloring = "";
                             const title = sectionTitles[ct];
                             if (title === this.state.hoverTitle)
-                                coloring = "dropdown-color";
+                                coloring = "dropdown-color item-border";
                             return (
                                 <li className={"full-size-item " + coloring}>
                                     <a href="#"
