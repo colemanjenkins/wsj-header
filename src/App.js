@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ul>
+      {/* <ul>
         {arr.map(element => {
           return <li>{element}</li>
         })}
-      </ul>
+      </ul> */}
     </div>
   );
 }
